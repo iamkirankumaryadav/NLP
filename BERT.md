@@ -47,7 +47,7 @@
 - Relevant features are extracted from the text.
 - **Lexical features:** The presence or absence of specific words or phrases (Wow, excellent, good, fabulous, average)
 - **Syntactic features:** The grammatical structure of the sentence.
-- **Semantic features:** The words' meaning and relationships.
+- **Semantic features:** The word's meaning and relationships.
 
 3. **Sentiment Classification:** 
 - The extracted features are fed into an ML model, which is trained to classify the sentiment as positive, negative, or neutral. 
