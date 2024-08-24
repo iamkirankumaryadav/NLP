@@ -1,12 +1,14 @@
 # **Bidirectional Encoder Representation Transformers (BERT)** 
 
-- A powerful technique in NLP that revolutionized how machines understand the nuances of human language. 
-- **Nuances:** A very small difference in meaning.
+- A powerful technique in NLP that revolutionized how machines understand the nuances and context of human language. 
+- **Nuances:** A very small difference in meaning, feeling, and sound.
+- BERT differ from traditional NLP models by employing self self-attention mechanism.
+- It allows the model to understand the nuances and context of each word in a sentence from both directions.
+- This capability enables transformers to capture long-range dependencies more effectively.
 - Traditional NLP models often analyzed text unidirectionally (left to right).
 - This limited their ability to capture the full context of a word based on its surrounding words.
--  BERT tackles this limitation by using a bidirectional approach.
--  It considers both the left and right context of a word simultaneously.
--  Allowing for a deeper understanding of its meaning in relation to the entire sentence.
+- BERT tackles this limitation by using a bidirectional approach.
+- Allowing for a deeper understanding of the meaning of the entire sentence.
 
 ### **The Transformer Architecture:**
 
