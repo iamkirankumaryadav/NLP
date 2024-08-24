@@ -2,7 +2,7 @@
 
 - A powerful technique in NLP that revolutionized how machines understand the nuances and context of human language. 
 - **Nuances:** A very small difference in meaning, feeling, and sound.
-- BERT differ from traditional NLP models by employing self self-attention mechanism.
+- BERT differ from traditional NLP models with the help of self-attention mechanism.
 - It allows the model to understand the nuances and context of each word in a sentence from both directions.
 - This capability enables transformers to capture long-range dependencies more effectively.
 - Traditional NLP models often analyzed text unidirectionally (left to right).
