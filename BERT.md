@@ -32,3 +32,37 @@
 - It has led to the development of even more sophisticated NLP models and has improved the performance of various NLP applications.
 - BERT is a complex model, and the details of its inner workings can be quite technical.
 - There are different variations of BERT models available, each fine-tuned for specific tasks.
+
+**Sentiment Analysis**: Understanding emotion in text
+- In sentiment analysis, we identify and classify the sentiments expressed in text (positive, negative, or neutral)
+- Lexicon-based approaches use predefined dictionaries to score sentiments.
+- While ML models train on labelled data to learn sentiment patterns.
+- Advanced transformers enhance accuracy by understanding the context and nuances, as well as sarcasm and negation.
+
+### **How does the Sentiment Analysis work?**
+1. **Text Preprocessing:** 
+- The text is cleaned and prepared for analysis (removing stop words, stemming, and tokenization)
+
+2. **Feature Extraction:** 
+- Relevant features are extracted from the text.
+- **Lexical features:** The presence or absence of specific words or phrases (Wow, excellent, good, fabulous, average)
+- **Syntactic features:** The grammatical structure of the sentence.
+- **Semantic features:** The words' meaning and relationships.
+
+3. **Sentiment Classification:** 
+- The extracted features are fed into an ML model, which is trained to classify the sentiment as positive, negative, or neutral. 
+
+4. **Sentiment Scoring:** 
+- The model assigns a sentiment score to the text, indicating the strength and direction of the sentiment.
+
+### Example: Social Media Sentiment Analysis
+- Imagine you're monitoring a brand to understand customer sentiment towards the products. You can use sentiment analysis to:
+- **Identify positive and negative feedback:** Determine which aspects of your products customers like or dislike.
+- **Track sentiment trends:** Monitor changes in customer sentiment over time.
+- **Respond to customer concerns:** Address negative feedback promptly.
+- For instance, if you analyze tweets mentioning your brand,
+- you might find many customers expressing positive sentiments about your new product's features,
+- while few customers are complaining about shipping delays. 
+- This information can help you focus your marketing efforts and improve customer satisfaction.
+- Fields: Marketing, customer service, political science, and social media research.
+- Sentiment analysis models are becoming accurate and capable of understanding more nuanced emotions in text.
