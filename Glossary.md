@@ -2,7 +2,7 @@
 
 ### **Machine Translation**
 - The process of automatically translating text from one language to another. 
-- A field of AI that helps computer to understand the meaning of text in one language and generate equivalent in another language.
+- A field of AI that helps computers to understand the meaning of text in one language and generate an equivalent in another language.
 
 ### **How Does Machine Translation Work?**
 1. **Text Preprocessing:** 
@@ -28,12 +28,15 @@
 
 2. **Neural Machine Translation (NMT):** 
 - NMT employs RNNs or transformer architectures, to learn the mapping between source and target languages.
+- NMT uses deep learning to understand and translate text with human-like fluency.
+- These models are trained on large datasets to handle various languages and contexts.
+- Improves the ability to translate and maintain high translation quality.
 - NMT has shown significant improvements in translation quality compared to SMT.
 
 ### Examples of Machine Translation
 1. **Google Translate:** 
 - One of the most widely used machine translation services.
-- Supports a vast number of languages and offers both text and speech real time translation.
+- Supports a vast number of languages and offers both text and speech real-time translation.
 
 2. **DeepL:**
 - Known for its high-quality translations, DeepL uses neural machine translation to provide accurate and fluent translations.
