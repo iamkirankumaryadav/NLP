@@ -12,7 +12,7 @@
 3. **Output Layer:** Produces the final result.
 4. **Weights:** Each connection between neurons has a weight (strength of the connection)
 5. **Biases:** Added to the weighted sum of inputs to adjust the neuron's output.
-6. **Activation Function:** A function applied to the weighted sum to determine the neuron's output.
+6. **Activation Function:** A mathematical function that determines the output of a neuron based on its input. 
 7. **Learning process:** ANN learns by adjusting their weights and biases through a process called backpropagation.
 8. **Backpropagation:** Compares the network's output to the desired output and updates the weights to minimize the error. 
 
