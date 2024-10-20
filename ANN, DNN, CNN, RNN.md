@@ -41,7 +41,7 @@ Imagine training an ANN to recognize handwritten digits.
 
 ### **DNN (Deep Neural Network)**
 - A type of ANN with multiple hidden layers between the input and output layers.
-- The 'deep' in DNN refers to the depth of the network that allows DNNs to learn complex patterns and features from data.
+- The **"deep"** refers to the depth that allows DNNs to learn complex patterns and relationships in the data.
 - **Basic Idea:** As data progresses through more layers, higher-level features are learned.
 - **Applications:** Image Recognition, NLP, Speech Recognition, Game Play, Drug Discovery, etc.
 
