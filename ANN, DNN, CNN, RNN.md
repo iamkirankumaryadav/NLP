@@ -1,20 +1,22 @@
-# **ANN | DNN | CNN | RNN** 
+# ANN | DNN | CNN | RNN
 
-### **ANN (Artificial Neural Network)**
-- A computational model inspired by biological neural networks found in the human brain.
+### ANN (Artificial Neural Network)
+- ANNs are computational models inspired by the **biological structure** and **functions** of the human brain.
+- ANNs are composed of interconnected nodes **(neurons)** that process information **(signals)**.
+- Each neuron receives signals, processes those signals, and then sends its signals to other neurons.
 - Designed to recognize patterns and solve complex problems by learning from data.
-- ANNs consist of layers of interconnected nodes (or 'neurons').
 - **Neurons:** The fundamental unit, receives inputs, processes them, and produces an output.
 
-**Layers:** Neurons are organized into layers.
-1. **Input Layer:** Receives data as input.
-2. **Hidden Layer:** Process and transform the data.
+### Layers 
+Neurons are organized into interconnected layers.
+1. **Input Layer:** Receives data as an input.
+2. **Hidden Layer:** Process and transform the data. Sends it to the subsequent nodes/layers.
 3. **Output Layer:** Produces the final result.
-4. **Weights:** Each connection between neurons has a weight (strength of the connection)
-5. **Biases:** Added to the weighted sum of inputs to adjust the neuron's output.
-6. **Activation Function:** A mathematical function that determines the output of a neuron based on its input. 
-7. **Learning process:** ANN learns by adjusting their weights and biases through a process called backpropagation.
-8. **Backpropagation:** Compares the network's output to the desired output and updates the weights to minimize the error. 
+- **Weights:** Each connection between neurons has a weight (strength of the connection)
+- **Biases:** Added to the weighted sum of inputs to adjust the neuron's output.
+- **Activation Function:** A mathematical function that determines the output of a neuron based on its input.
+- **Learning process:** ANN learns by adjusting their weights and biases through backpropagation.
+- **Backpropagation:** Compares the network's output to the desired output and updates the weights to minimize the error. 
 
 ### **Example: Image Recognition**
 Imagine training an ANN to recognize handwritten digits.
@@ -42,8 +44,13 @@ Imagine training an ANN to recognize handwritten digits.
 ### **DNN (Deep Neural Network)**
 - A type of ANN with multiple hidden layers between the input and output layers.
 - The **"deep"** refers to the depth that allows DNNs to learn complex patterns and relationships in the data.
-- **Basic Idea:** As data progresses through more layers, higher-level features are learned.
-- **Applications:** Image Recognition, NLP, Speech Recognition, Game Play, Drug Discovery, etc.
+- A DNN can learn to identify the pattern by breaking the data (image) into smaller features.
+- The deeper layers of the network can then combine these features to form a more complex understanding.
+- **Input Layer:** The first layer receives the input data, such as an image or a text document.
+- **Hidden Layers:** These layers process the input data, learn the useful features and extract them.
+- Each neuron in a hidden layer is connected to neurons in the previous and subsequent layers.
+- The weights on these connections determine how much influence each neuron has on the others.
+- **Output Layer:** The final layer produces the output, such as a classification or a prediction.
 
 ### **CNN (Convolutional Neural Network)**
 - A type of DNN specialized for processing grid-like data such as images and video.
