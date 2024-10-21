@@ -9,7 +9,7 @@
 
 ### Layers 
 Neurons are organized into interconnected layers.
-1. **Input Layer:** Receives data as an input.
+1. **Input Layer:** Receives data as an input (a vector of numerical values).
 2. **Hidden Layer:** Process and transform the data. Sends it to the subsequent nodes/layers.
 3. **Output Layer:** Produces the final result.
 - **Weights:** Each connection between neurons has a weight (strength of the connection)
@@ -18,7 +18,7 @@ Neurons are organized into interconnected layers.
 - **Learning process:** ANN learns by adjusting their weights and biases through backpropagation.
 - **Backpropagation:** Compares the network's output to the desired output and updates the weights to minimize the error. 
 
-### **Example: Image Recognition**
+### Example: Image Recognition
 Imagine training an ANN to recognize handwritten digits.
 
 1. **Input:** 
@@ -35,13 +35,12 @@ Imagine training an ANN to recognize handwritten digits.
 - The network is trained on a dataset of handwritten digits.
 - During training, the weights and biases are adjusted to minimize the error between the predicted output and the correct label.
 
-### **FNN (Feed Forward Network)**
+### FNN (Feed Forward Network)
 - The simplest type of ANN, information flows in one direction, from the input to the output layer without any feedback loops.
 - **Single layer perceptron (SLP):** A simple network with only one hidden layer.
 - **Multi-layer perceptron (MLP):** A network with multiple hidden layers, capable of learning complex patterns.
-- **Radial basis function (RBF):** Uses RBF as an activation function, often used for interpolation and pattern recognition.
 
-### **DNN (Deep Neural Network)**
+### DNN (Deep Neural Network)
 - A type of ANN with multiple hidden layers between the input and output layers.
 - The **"deep"** refers to the depth that allows DNNs to learn complex patterns and relationships in the data.
 - A DNN can learn to identify the pattern by breaking the data (image) into smaller features.
@@ -52,19 +51,32 @@ Imagine training an ANN to recognize handwritten digits.
 - The weights on these connections determine how much influence each neuron has on the others.
 - **Output Layer:** The final layer produces the output, such as a classification or a prediction.
 
-### **CNN (Convolutional Neural Network)**
-- A type of DNN specialized for processing grid-like data such as images and video.
+### CNN (Convolutional Neural Network)
+- A type of ANN specialized for processing and analyzing grid-like data such as images and video.
 - They have convolutional layers that automatically and adaptively learn spatial hierarchies of features.
-- **Use Cases:** Image and video recognition, recommendation systems.
+- **Use Cases:** Computer Vision tasks like object detection, image classification, and segmentation.
 - **Basic Idea:** Use convolution operations to process data in small chunks (like small image patches)
 
-### **RNN (Recurrent Neural Network)**
-- RNNs are designed for sequential data like time series and sentences (sequence of words/texts)
-- A type of neural network where connections between nodes form a cycle, allowing output from previous steps to influence the current step.
-- **Use Cases:** Sequence prediction, time series forecasting, natural language processing.
-- **Basic Idea:** Has memory from previous steps to inform the current step.
+### Key Components of CNNs
+1. **Convolutional Layers:** 
+- These layers apply filters to the input data, extracting basic features like edges, corners, and textures.
+- The filters are essentially small matrices that slide across the input image, computing the dot product with the underlying pixels.
+- Subsequent layers can extract more complex features, such as the shape of the animal's head, body, and tail.
 
-### **LSTM (Long Short-Term Memory)**
+2. **Pooling Layers:** 
+- These layers downsample the feature maps, reducing the dimensionality of the data while preserving the most important information.
+
+3. **Fully Connected Layers:** 
+- The final layers combine the extracted features to produce a probability for each class (cat or dog).
+- The class with the highest probability is chosen as the prediction.
+
+### RNN (Recurrent Neural Network)
+- A type of ANN designed to process sequential data like time series, text, video, audio and sentences (sequence of words/texts)
+- A type of neural network where connections between nodes form a cycle, allowing output from previous steps to influence the current step.
+- **Hidden State:** RNN maintain a hidden state, which represents the network memory of previous/past input.
+- **Recurrent Connections:** Allows information to flow from previous time steps to the current step to capture dependencies and context.
+
+### LSTM (Long Short-Term Memory)
 - A special type of RNN design to address the vanishing gradient problem while dealing with long sequences.
 - LSTMs are a powerful tool for modelling sequential data and capturing long-term dependencies.
 - LSTM introduces a memory cell to each hidden layer. The memory cell is controlled by three gates.
@@ -74,7 +86,7 @@ Imagine training an ANN to recognize handwritten digits.
 - **Output Gate:** Determines how much of the cell state should be sent as output.
 - **Application:** NLP, Speech Recognition, Time Series Analysis, Music Generation, etc.
 
-### **LLM (Large Language Model)**
+### LLM (Large Language Model)
 - A type of model that predicts the likelihood of a sequence of words.
 - With the advancement in neural networks, modern LLMs like GPT (from OpenAI) and BERT (from Google) are neural-based and extremely powerful.
 - **Use Cases:** Text generation, natural language understanding, question answering, and more.
