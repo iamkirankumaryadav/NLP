@@ -71,24 +71,19 @@ Imagine training an ANN to recognize handwritten digits.
 - The class with the highest probability is chosen as the prediction.
 
 ### RNN (Recurrent Neural Network)
-- A type of ANN designed to process sequential data like time series, text, video, audio and sentences (sequence of words/texts)
+- A type of ANN designed to process sequential data like time series, video, audio and sentences (sequence of words/texts)
 - A type of neural network where connections between nodes form a cycle, allowing output from previous steps to influence the current step.
-- **Hidden State:** RNN maintain a hidden state, which represents the network memory of previous/past input.
-- **Recurrent Connections:** Allows information to flow from previous time steps to the current step to capture dependencies and context.
+- **Hidden State:** RNN maintains a hidden state, representing the network memory of previous/past input.
+- **Recurrent Connections:** Allows information to flow from the previous node to the current node to capture dependencies and context.
 
 ### LSTM (Long Short-Term Memory)
 - A special type of RNN design to address the vanishing gradient problem while dealing with long sequences.
-- LSTMs are a powerful tool for modelling sequential data and capturing long-term dependencies.
-- LSTM introduces a memory cell to each hidden layer. The memory cell is controlled by three gates.
-- These memory cells help the network to selectively remember information over long period of time.
-- **Forget Gate:** Determines how much of the previous cell state should be forgotten.
+- The vanishing gradient problem is a phenomenon that occurs during the training of deep neural networks.
+- The gradients that are used to update the network become extremely small (vanish) as they are backpropagated.
+- LSTM is a powerful tool for modelling sequential data and capturing long-term dependencies.
+- LSTM introduces a memory cell to each hidden layer. Three gates control the memory cell.
+- These memory cells help the network to remember information over a long period selectively.
+- **Forget Gate:** Determines how much of the previous cell state should be forgotten (Things to forget)
 - **Input Gate:** Determines how much of the current input should be written to the cell state (Things to remember)
 - **Output Gate:** Determines how much of the cell state should be sent as output.
 - **Application:** NLP, Speech Recognition, Time Series Analysis, Music Generation, etc.
-
-### LLM (Large Language Model)
-- A type of model that predicts the likelihood of a sequence of words.
-- With the advancement in neural networks, modern LLMs like GPT (from OpenAI) and BERT (from Google) are neural-based and extremely powerful.
-- **Use Cases:** Text generation, natural language understanding, question answering, and more.
-- **Basic Idea:** Given a sequence of words, predict the next word or understand the context.
-- It’s trained on large text corpora to understand and generate human-like text.
