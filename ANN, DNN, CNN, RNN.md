@@ -8,7 +8,8 @@
 - **Neurons:** The fundamental unit, receives inputs, processes them, and produces an output.
 
 ### Layers 
-Neurons are organized into interconnected layers.
+Neurons are organized into interconnect
+ed layers.
 1. **Input Layer:** Receives data as an input (a vector of numerical values).
 2. **Hidden Layer:** Process and transform the data. Sends it to the subsequent nodes/layers.
 3. **Output Layer:** Produces the final result.
