@@ -16,7 +16,14 @@ Neurons are organized into interconnected layers.
 - **Biases:** Added to the weighted sum of inputs to adjust the neuron's output.
 - **Activation Function:** A mathematical function that determines the output of a neuron based on its input.
 - **Learning process:** ANN learns by adjusting their weights and biases through backpropagation.
-- **Backpropagation:** Compares the network's output to the desired output and updates the weights to minimize the error. 
+- **Backpropagation:** Compares the network's output to the desired output and updates the weights to minimize the error.
+
+### Hidden Layer
+- The hidden layers are not exposed to the input or output.
+- The hidden layers are considered as the computational engine of the neural network.
+- Each hidden layer's neurons take the weighted sum of the outputs from the previous layer.
+- Applies an activation function, and passes the result to the next layer.
+- The network can have zero or more hidden layers.
 
 ### Example: Image Recognition
 Imagine training an ANN to recognize handwritten digits.
