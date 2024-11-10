@@ -3,7 +3,7 @@
 ### ANN (Artificial Neural Network)
 - ANNs are computational models inspired by the **biological structure** and **functions** of the human brain.
 - ANNs are composed of interconnected nodes **(neurons)** that process information **(signals)**.
-- Each neuron receives signals, processes those signals, and then sends its signals to other neurons.
+- Each neuron receives information, processes those information, and then sends its to other neurons.
 - Designed to recognize patterns and solve complex problems by learning from data.
 - **Neurons:** The fundamental unit, receives inputs, processes them, and produces an output.
 
@@ -25,6 +25,21 @@ Neurons are organized into interconnected layers.
 - Applies an activation function, and passes the result to the next layer.
 - The network can have zero or more hidden layers.
 
+### Fully Connected Layer
+- Each neuron in one layer is connected to every neuron in the next layer, making this a fully connected network.
+- The strength of the connection between neurons is represented by weights.
+- Learning in a neural network involves updating these weights based on the error of the output.
+
+### Feedforward Phase 
+- In this phase, the input data is fed into the network, and it propagates forward through the network.
+- At each hidden layer, the weighted sum of the inputs is calculated and passed through an activation function, which introduces non-linearity into the model.
+- This process continues until the output layer is reached, and a prediction is made.
+
+### Backpropagation Phase 
+- Once a prediction is made, the error (difference between the predicted output and the actual output) is calculated.
+- This error is then propagated back through the network, and the weights are adjusted to minimize this error.
+- The process of adjusting weights is typically done using a gradient descent optimization algorithm.
+
 ### Example: Image Recognition
 Imagine training an ANN to recognize handwritten digits.
 
@@ -43,7 +58,8 @@ Imagine training an ANN to recognize handwritten digits.
 - During training, the weights and biases are adjusted to minimize the error between the predicted output and the correct label.
 
 ### FNN (Feed Forward Network)
-- The simplest type of ANN, information flows in one direction, from the input to the output layer without any feedback loops.
+- The simplest type of ANN, information flows in only one direction without any feedback loops/cycles.
+- From the input layer nodes, through the hidden layer nodes (if any) to the output layer nodes.
 - **Single layer perceptron (SLP):** A simple network with only one hidden layer.
 - **Multi-layer perceptron (MLP):** A network with multiple hidden layers, capable of learning complex patterns.
 
